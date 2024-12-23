@@ -1,0 +1,190 @@
+.footer {
+  background-color: #0b1120; /* Deep navy background */
+  color: #d1d5db; /* Soft gray text */
+  padding-bottom: 1%;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centers the cards horizontally */
+  gap: 20px; /* Space between cards */
+  max-width: 1200px; /* Reduce overall container width */
+  margin: 0 auto;
+}
+
+.team-member {
+  display: flex;
+  align-items: center; /* Align items vertically in the center */
+  gap: 20px; /* Space between image and text */
+  padding: 15px; /* Reduce padding */
+  border-radius: 8px;
+  background: linear-gradient(145deg, #1e293b, #334155);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+  max-width: 600px; /* Limit the card width */
+}
+
+.team-member::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(59, 130, 246, 0.15); /* Subtle blue highlight on hover */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1; /* Ensure it stays behind the content */
+}
+
+.team-member:hover::before {
+  opacity: 1;
+}
+
+.team-member:hover {
+  transform: translateY(-5px); /* Slight hover effect */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+}
+
+.team-member h3 {
+  margin-bottom: 1px;
+  font-size: 20px; /* Increased font size */
+  font-weight: 600;
+  color: #f9fafb; /* White text */
+  transition: color 0.3s ease;
+}
+
+.team-member h3:hover {
+  color: #3b82f6; /* Bright blue text on hover */
+}
+
+.team-member p {
+  font-size: 14px; /*Increased font size*/
+  color: #94a3b8; /* Muted gray */
+  transition: color 0.3s ease;
+  /* margin-bottom: 10px; */
+  margin: 5px 0;
+}
+
+.team-member p:hover {
+  color: #f9fafb; /* Highlight text on hover */
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Space between icons */
+  margin-bottom: 10px; 
+  position: relative;
+  z-index: 1; /* Ensure it stays above the overlay */
+}
+
+.social-links a {
+  font-size: 25px; /* Larger icon size */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-links a:nth-child(1) {
+  color: #0966C2; /* FaLinkedin color */
+}
+
+.social-links a:nth-child(2) {
+  color: #FF00BF; /* FaInstagram color */
+}
+
+.social-links a:nth-child(3) {
+  color: #0FC044; /* FaWhatsapp color */
+}
+
+.social-links a:nth-child(4) {
+  color: #ffffff; /* FaGithub color */
+}
+
+.social-links a:nth-child(5) {
+  color: red; /* FaEnvelope color */
+}
+
+.social-links a:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2); /* Slightly brighten on hover */
+}
+
+.footer-general {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px; /* Increased font size */
+  color: #6b7280;
+}
+
+.footer-general a {
+  color: #3b82f6;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-general a:hover {
+  color: #60a5fa;
+}
+.header {
+  text-align: center;
+  padding: 15px 0;
+  background: linear-gradient(90deg, #1e293b, #334155); /* Dark-themed gradient */
+  color: #f9fafb; /* White text for contrast */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  font-size: 28px; /* Large font size */
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.header:hover {
+  background: linear-gradient(90deg, #334155, #1e293b);
+  transform: scale(1.05); 
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 30px; 
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Subtle glowing effect */
+  animation: headerGlow 2s infinite alternate; /* Glow animation */
+}
+
+@keyframes headerGlow {
+  from {
+    text-shadow: 0 0 5px #3b82f6, 0 0 10px #06b6d4;
+  }
+  to {
+    text-shadow: 0 0 15px #3b82f6, 0 0 20px #06b6d4;
+  }
+}
+
+.team-member p:nth-of-type(2) {
+  font-size: 16px;
+  font-weight: 500;
+  color: #d1d5db; 
+  /* margin-bottom: 20px; */
+}
+
+.team-member p:hover:nth-of-type(2) {
+  color: #06b6d4; /* Highlight contact number on hover */
+}
+
+.profile-image {
+  width: 120px; /* Reduced size for profile image */
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.team-member:hover .profile-image {
+  /* transform: scale(1); Slight zoom effect on hover */
+  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.2); /* Adds a subtle glow on hover */
+}
+
+

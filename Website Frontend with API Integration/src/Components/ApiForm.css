@@ -1,0 +1,233 @@
+/* Background and general styling */
+/* Background and general styling */
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://img.freepik.com/premium-photo/background-with-modern-techno-design_1077802-93802.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.8; /* Adjust the opacity of the background image */
+    z-index: -1; /* Ensure it stays behind the content */
+}
+
+.api-form-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; /* Stack form and email list vertically */
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+    padding: 10px;
+}
+
+.header-section{
+  background-color: aliceblue;
+}
+
+/* Other form and styling remains unchanged */
+
+  
+  form {
+    margin-bottom: 40px;
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    width: 100%;
+    animation: fadeInSlideDown 1s ease-in-out;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #ef894a;
+  }
+
+  h4 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 10px;
+    animation: zoomIn 2s ease-in-out infinite;
+    color: #fff;
+  }
+
+  h5 {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 0%;
+    font-size: 50px;
+    animation: slideFade 3s ease-in-out infinite;
+    color: #120909;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 18px;
+    color: #fff;
+  }
+  
+  input,
+  textarea,
+  button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  textarea {
+    resize: none;
+    height: 80px;
+  }
+  
+  input:focus,
+  textarea:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+  }
+  
+  .submit-btn {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .submit-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .error {
+    color: red;
+    text-align: center;
+  }
+  
+  .contact-group {
+    margin-bottom: 20px;
+    animation: slideInLeft 0.5s ease-in-out;
+  }
+  
+  .remove-btn,
+  .add-btn {
+    background-color: #28a745;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .remove-btn:hover,
+  .add-btn:hover {
+    background-color: #218838;
+  }
+  
+  /* Animations */
+  @keyframes fadeInSlideDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes zoomIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  @keyframes slideFade {
+    0% {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    25% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    50% {
+      transform: translateX(20px);
+      opacity: 0.8;
+    }
+    75% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+  }
+
+  @keyframes pulseZoom {
+    0% {
+      transform: scale(1) rotate(0deg);
+      opacity: 1;
+    }
+    25% {
+      transform: scale(1.2) rotate(5deg);
+      opacity: 0.9;
+    }
+    50% {
+      transform: scale(1) rotate(0deg);
+      opacity: 1;
+    }
+    75% {
+      transform: scale(1.1) rotate(-5deg);
+      opacity: 0.8;
+    }
+    100% {
+      transform: scale(1) rotate(0deg);
+      opacity: 1;
+    }
+  }
+
+  .download-link-container {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .download-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .download-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  

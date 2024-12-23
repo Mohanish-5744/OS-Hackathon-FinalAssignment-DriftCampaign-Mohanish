@@ -1,0 +1,116 @@
+/* General Styles for Email List */
+.email-list-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: left; /* Align text to the left inside the container */
+}
+
+/* Styling individual email items */
+.email-item {
+  background-color: #fff;
+  margin: 15px 0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.5;
+}
+
+/* Hover effect for email items */
+.email-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Email Subject */
+.email-item h3 {
+  font-size: 1.5rem;
+  color: #007bff;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Email Body - Styled like an email format */
+.email-item .email-body {
+  padding: 15px;
+  border: 1px solid #ddd;
+  background-color: #fefefe;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  color: #090101;
+  margin-top: 10px;
+  white-space: pre-wrap; /* Preserve line breaks in the body */
+}
+
+/* Resize images to fit better and look proportional */
+.email-item img {
+  max-width: 70%;
+  max-height: 70%;
+  height: auto;
+  position: relative;
+  border-radius: 8px;
+  margin: 15px auto; /* Center the image horizontally */
+  display: block; /* Ensure the image centers */
+}
+
+/* Call to Action button inside the email */
+.email-item .call-to-action-btn {
+  display: block;
+  margin: 15px auto;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.email-item .call-to-action-btn:hover {
+  background-color: #218838;
+}
+
+/* Styling the Download Button */
+.download-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Styling the Download CSV button wrapper */
+.download-btn-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Title Styling */
+h2, h3 {
+  font-size: 2rem;
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
