@@ -143,6 +143,22 @@ body::before {
   .add-btn:hover {
     background-color: #218838;
   }
+
+  select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #fff;
+    color: #000;
+}
+
+/* For focus effect, matching input fields */
+select:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(245, 243, 243, 0.8);
+}
   
   /* Animations */
   @keyframes fadeInSlideDown {

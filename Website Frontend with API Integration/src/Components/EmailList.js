@@ -9,7 +9,7 @@ const EmailList = ({ emails, downloadLink }) => {
         <div key={index} className="email-item">
           <h3>Subject: {email.subject}</h3>
           <div className="email-body">
-            {email.body}
+            <p>Body: {email.body}</p>
           </div>
           {email.image_url && (
             <img src={email.image_url} alt="Email Visual" />
