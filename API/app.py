@@ -142,7 +142,7 @@ def generate_emails():
         ]
 
         # Generate download link for CSV
-        download_link = url_for('download_csv', filename=filename, _external=True)
+        download_link = url_for('download_csv', filename=filename, _external=True,_scheme='https')
 
         result = {
             "emails": formatted_emails,
