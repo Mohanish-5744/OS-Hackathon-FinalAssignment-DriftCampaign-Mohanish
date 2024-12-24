@@ -1,0 +1,124 @@
+***Sample inputs for testing****
+
+--------------------------------
+
+
+1. Share Market Trading (Marathi)
+
+{
+  "account_name": "MAK Trading Company.",
+  "industry": "Sharemarket",
+  "pain_points": "Trading complexity, market volatility",
+  "campaign_objective": "improve decision-making, and reduce trading risks",
+  "number_of_emails": 1,
+  "language": "Marathi",
+  "contacts": [
+    {
+      "job_title": "Trader",
+      "name": "Mohanish",
+      "email": "mohanishkhambadkar@gmail.com"
+    }
+  ]
+}
+
+--------------------------------
+
+2. Technology & Software Development (English)
+
+{
+  "account_name": "Tech Innovations Ltd.",
+  "industry": "Software Development",
+  "pain_points": "Code optimization, bug fixing",
+  "campaign_objective": "Enhance software efficiency and improve debugging processes",
+  "number_of_emails": 1,
+  "language": "English",
+  "contacts": [
+    {
+      "job_title": "Software Engineer",
+      "name": "Alice Johnson",
+      "email": "alice.johnson@techinnovations.com"
+    }
+  ]
+}
+
+--------------------------------
+
+3. Healthcare (Arabic)
+
+{
+  "account_name": "SevenStar Hospital",
+  "industry": "Healthcare",
+  "pain_points": "Patient management, medical records system",
+  "campaign_objective": "Improve patient care through better medical data management",
+  "number_of_emails": 2,
+  "language": "Arabic",
+  "contacts": [
+    {
+      "job_title": "Doctor",
+      "name": "Carlos Lopez",
+      "email": "carlos.lopez@saludybienestar.com"
+    }
+  ]
+}
+
+--------------------------------
+
+4. E-Commerce (French)
+
+{
+  "account_name": "Elastic Run",
+  "industry": "E-Commerce",
+  "pain_points": "Cart abandonment, customer retention",
+  "campaign_objective": "Reduce cart abandonment and improve user experience",
+  "number_of_emails": 1,
+  "language": "French",
+  "contacts": [
+    {
+      "job_title": "Marketing Manager",
+      "name": "Sophie Martin",
+      "email": "sophie.martin@ventedirecte.com"
+    }
+  ]
+}
+
+--------------------------------
+
+5. Education (German)
+
+{
+  "account_name": "Bildung GmbH",
+  "industry": "Education",
+  "pain_points": "Student engagement, course material delivery",
+  "campaign_objective": "Improve engagement through interactive online courses",
+  "number_of_emails": 1,
+  "language": "German",
+  "contacts": [
+    {
+      "job_title": "Course Instructor",
+      "name": "Johann Schmidt",
+      "email": "johann.schmidt@bildunggmbh.com"
+    }
+  ]
+}
+
+--------------------------------
+
+6. Financial Services (Italian)
+
+{
+  "account_name": "FinanzaSmart",
+  "industry": "Financial Services",
+  "pain_points": "Investment management, portfolio balancing",
+  "campaign_objective": "Optimize client investment strategies and improve financial planning",
+  "number_of_emails": 1,
+  "language": "Italian",
+  "contacts": [
+    {
+      "job_title": "Investment Advisor",
+      "name": "Giulia Rossi",
+      "email": "giulia.rossi@finanzasmart.com"
+    }
+  ]
+}
+
+
