@@ -8,13 +8,13 @@
 	},
 	"item": [
 		{
-			"name": "Share market Our APIU",
+			"name": "Locally Tested",
 			"request": {
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"account_name\": \"MAK Trading Company.\",\r\n  \"industry\": \"Sharemarket\",\r\n  \"pain_points\": \"Trading complexity, market volatility\",\r\n  \"campaign_objective\": \"Promote our new SaaS platform to enhance market analysis, improve decision-making, and reduce trading risks\",\r\n  \"number_of_emails\": 1,\r\n  \"language\": \"Hindi\",\r\n  \"contacts\": [\r\n    {\r\n      \"name\": \"John Doe\",\r\n      \"email\": \"john.doe@example.com\"\r\n    }\r\n  ]\r\n}\r\n",
+					"raw": "{\r\n  \"account_name\": \"MAC Animation\",\r\n  \"industry\": \"Animation\",\r\n  \"pain_points\": \"Designing, Animation\",\r\n  \"campaign_objective\": \"Trained in Animation fields in software like 3D MAX, Adobe \",\r\n  \"number_of_emails\": 1,\r\n  \"language\": \"English\",\r\n   \"contacts\": [\r\n    {\r\n      \"job_title\": \"CTO\",\r\n      \"name\": \"Samarth Nandanwar\",\r\n      \"email\": \"samarth@gmail.com\"\r\n    }\r\n  ]\r\n}\r\n\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -25,70 +25,7 @@
 			},
 			"response": [
 				{
-					"name": "Share market Our APIU",
-					"originalRequest": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n  \"account_name\": \"MAK Trading Company.\",\r\n  \"industry\": \"Sharemarket\",\r\n  \"pain_points\": \"Trading complexity, market volatility\",\r\n  \"campaign_objective\": \"Promote our new SaaS platform to enhance market analysis, improve decision-making, and reduce trading risks\",\r\n  \"number_of_emails\": 1,\r\n  \"language\": \"Hindi\",\r\n  \"contacts\": [\r\n    {\r\n      \"name\": \"John Doe\",\r\n      \"email\": \"john.doe@example.com\"\r\n    }\r\n  ]\r\n}\r\n",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "http://127.0.0.1:5000/generate-emails"
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "Server",
-							"value": "Werkzeug/3.0.1 Python/3.10.4"
-						},
-						{
-							"key": "Date",
-							"value": "Sun, 22 Dec 2024 08:54:31 GMT"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json"
-						},
-						{
-							"key": "Content-Length",
-							"value": "1310"
-						},
-						{
-							"key": "Connection",
-							"value": "close"
-						}
-					],
-					"cookie": [],
-					"body": "{\n    \"emails\": [\n        {\n            \"body\": \"हमारा नया SaaS प्लेटफॉर्म आपके ट्रेडिंग निर्णयों को सरल और सुरक्षित बनाता है।\",\n            \"call_to_action\": \"अभी जानें कैसे!\",\n            \"image_url\": \"https://oaidalleapiprodscus.blob.core.windows.net/private/org-Eo1U9k4AbSJPoV7seW2PDq2d/user-oGBnQp1igcXKlzRsuv3QKfH3/img-LYqeXIL68aGcfkKaSxZUxZqV.png?st=2024-12-22T07%3A56%3A06Z&se=2024-12-22T09%3A56%3A06Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-12-21T19%3A34%3A28Z&ske=2024-12-22T19%3A34%3A28Z&sks=b&skv=2024-08-04&sig=h%2BwPWmQYVuud094u9zdT2ily469cs%2B/EO2oQ2/EJY8w%3D\",\n            \"optimal_send_time\": \"Tuesday, 10:00 AM\",\n            \"subject\": \"क्या आप ट्रेडिंग जटिलताओं से जूझ रहे हैं?\"\n        }\n    ]\n}"
-				}
-			]
-		},
-		{
-			"name": "Updated Ai/ml api using csv and image",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n  \"account_name\": \"MAC Animation\",\r\n  \"industry\": \"Animation\",\r\n  \"pain_points\": \"Designing, Animation\",\r\n  \"campaign_objective\": \"Trained in Animation fields in software like 3D MAX, Adobe \",\r\n  \"number_of_emails\": 1,\r\n  \"language\": \"English\",\r\n  \"contacts\": [\r\n    {\"job_title\": \"Student\", \"name\": \"Samarth Nandanwar\", \"email\": \"samarth@gmail.com\"},\r\n    {\"job_title\": \"CTO\", \"name\": \"Mohanish\", \"email\": \"mohanish@gmail.com\"}\r\n  ]\r\n}\r\n",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": "https://onlinesales-api-maildriftcampaign.onrender.com//generate-emails"
-			},
-			"response": [
-				{
-					"name": "Updated Ai/ml api using csv and image",
+					"name": "Locally Tested",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -129,12 +66,75 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"emails\": [\n        {\n            \"body\": \"Hi Dnyan,\\n\\nAs a Marketing Manager at Tech Solutions Inc., you understand the challenges of high development costs. Discover how AIML on AWS Cloud can streamline your processes and reduce expenses. Our tailored solutions are designed to enhance efficiency and drive innovation in software development.\\n\\nBest regards,\\n[Your Name]\",\n            \"call_to_action\": \"Explore our AIML solutions today\",\n            \"image_url\": \"https://oaidalleapiprodscus.blob.core.windows.net/private/org-Eo1U9k4AbSJPoV7seW2PDq2d/user-oGBnQp1igcXKlzRsuv3QKfH3/img-6c30sF5CeX4eT9oaPWN55Bkv.png?st=2024-12-22T09%3A52%3A25Z&se=2024-12-22T11%3A52%3A25Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-12-21T19%3A37%3A55Z&ske=2024-12-22T19%3A37%3A55Z&sks=b&skv=2024-08-04&sig=W5KA22FNJIk8ZcANNe4tEzrSzAnlMFMvhDFzBsOjFGg%3D\",\n            \"optimal_send_time\": \"Tuesday, 10:00 AM\",\n            \"subject\": \"Unlock Cost-Effective AIML Solutions with AWS Cloud\"\n        },\n        {\n            \"body\": \"Hi Samarth,\\n\\nAs CTO, you're focused on cutting-edge technology and cost management. Our AIML solutions on AWS Cloud offer a powerful way to optimize your development processes and reduce overhead. Let's discuss how we can support your strategic goals.\\n\\nBest regards,\\n[Your Name]\",\n            \"call_to_action\": \"Schedule a consultation with our experts\",\n            \"image_url\": \"https://oaidalleapiprodscus.blob.core.windows.net/private/org-Eo1U9k4AbSJPoV7seW2PDq2d/user-oGBnQp1igcXKlzRsuv3QKfH3/img-vF9CP14z2uwvVSSA3bh2s8lE.png?st=2024-12-22T09%3A52%3A39Z&se=2024-12-22T11%3A52%3A39Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-12-21T19%3A32%3A25Z&ske=2024-12-22T19%3A32%3A25Z&sks=b&skv=2024-08-04&sig=pKWQTeRdwMmbw52dwuza88ovw3DUTzsgxj/YASTvcDA%3D\",\n            \"optimal_send_time\": \"Thursday, 11:00 AM\",\n            \"subject\": \"Revolutionize Your Development with AIML on AWS Cloud\"\n        }\n    ]\n}"
+					"body": "{\n    \"download_link\": \"http://127.0.0.1:5000/generate-emails/download-csv?filename=email_sequence.csv\",\n    \"emails\": [\n        {\n            \"body\": \"Hi Samarth,\\n\\nAs CTO, you're focused on cutting-edge technology and cost management. Our AIML solutions on AWS Cloud offer a powerful way to optimize your development processes and reduce overhead. Let's discuss how we can support your strategic goals.\\n\\nBest regards,\\n[Your Name]\",\n            \"call_to_action\": \"Schedule a consultation with our experts\",\n            \"image_url\": \"https://oaidalleapiprodscus.blob.core.windows.net/private/org-Eo1U9k4AbSJPoV7seW2PDq2d/user-oGBnQp1igcXKlzRsuv3QKfH3/img-vF9CP14z2uwvVSSA3bh2s8lE.png?st=2024-12-22T09%3A52%3A39Z&se=2024-12-22T11%3A52%3A39Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-12-21T19%3A32%3A25Z&ske=2024-12-22T19%3A32%3A25Z&sks=b&skv=2024-08-04&sig=pKWQTeRdwMmbw52dwuza88ovw3DUTzsgxj/YASTvcDA%3D\",\n            \"optimal_send_time\": \"Thursday, 11:00 AM\",\n            \"subject\": \"Revolutionize Your Development with AIML on AWS Cloud\"\n        }\n    ]\n}"
 				}
 			]
 		},
 		{
-			"name": "Download CSV FILE link testted",
+			"name": "Locally Tested 2 Contact, Email",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"account_name\": \"MAC Animation\",\r\n  \"industry\": \"Animation\",\r\n  \"pain_points\": \"Designing, Animation\",\r\n  \"campaign_objective\": \"Trained in Animation fields in software like 3D MAX, Adobe \",\r\n  \"number_of_emails\": 2,\r\n  \"language\": \"English\",\r\n  \"contacts\": [\r\n    {\"job_title\": \"Student\", \"name\": \"Samarth Nandanwar\", \"email\": \"samarth@gmail.com\"},\r\n    {\"job_title\": \"CTO\", \"name\": \"Mohanish\", \"email\": \"mohanish@gmail.com\"}\r\n  ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/generate-emails"
+			},
+			"response": [
+				{
+					"name": "Locally Tested 2 Contact, Email",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"account_name\": \"Tech Solutions Inc.\",\r\n  \"industry\": \"Software Development\",\r\n  \"pain_points\": \"High development costs, AIML Cloud\",\r\n  \"campaign_objective\": \"Increase awareness AIML including AWS Cloud\",\r\n  \"number_of_emails\": 2,\r\n  \"language\": \"English\",\r\n  \"contacts\": [\r\n    {\"job_title\": \"Marketing Manager\", \"name\": \"Dnyan Khambadkar\", \"email\": \"pmohanishkhambadkar@gmail.com\"},\r\n    {\"job_title\": \"CTO\", \"name\": \"Samarth\", \"email\": \"samarth@gmail.com\"}\r\n  ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:5000/generate-emails"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.0.1 Python/3.10.4"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 22 Dec 2024 10:51:04 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2057"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"download_link\": \"http://127.0.0.1:5000/generate-emails/download-csv?filename=email_sequence.csv\",\n  \"emails\": [\n    {\n      \"body\": \"Hi Samarth, \\n\\nUnlock your potential in animation with our expert-led training in 3D MAX and Adobe. As a student eager to excel, mastering these tools will set you apart in the animation industry. Our tailored courses address your design and animation challenges, ensuring you gain the skills needed to thrive. \\n\\nJoin us and transform your creative journey!\",\n      \"call_to_action\": \"Enroll Now and Start Your Animation Mastery!\",\n      \"image_url\": \"https://oaidalleapiprodscus.blob.core.windows.net/private/org-Eo1U9k4AbSJPoV7seW2PDq2d/user-oGBnQp1igcXKlzRsuv3QKfH3/img-mnQoPyRyCp7yMRWCAtB4wPRP.png?st=2024-12-23T10%3A58%3A12Z&se=2024-12-23T12%3A58%3A12Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-12-22T19%3A46%3A28Z&ske=2024-12-23T19%3A46%3A28Z&sks=b&skv=2024-08-04&sig=UwlY41qnYJ86COKFe7jQKv%2BKR7%2FKCNYhGVxmnacL3rI%3D\",\n      \"optimal_send_time\": \"Tuesday, 10:00 AM\",\n      \"subject\": \"Master Animation with Industry-Leading Tools!\"\n    },\n    {\n      \"body\": \"Hi Mohanish, \\n\\nEmpower your team at MAC Animation with our specialized training in 3D MAX and Adobe. As a CTO, you understand the importance of overcoming design and animation hurdles. Our courses are designed to enhance your team's capabilities, driving innovation and efficiency. \\n\\nLet's collaborate to elevate your animation projects!\",\n      \"call_to_action\": \"Schedule a Consultation to Discuss Training Options\",\n      \"image_url\": \"https://oaidalleapiprodscus.blob.core.windows.net/private/org-Eo1U9k4AbSJPoV7seW2PDq2d/user-oGBnQp1igcXKlzRsuv3QKfH3/img-5P3gnxn9fAoA4BqwqsKMLfGc.png?st=2024-12-23T10%3A58%3A31Z&se=2024-12-23T12%3A58%3A31Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-12-23T02%3A47%3A25Z&ske=2024-12-24T02%3A47%3A25Z&sks=b&skv=2024-08-04&sig=2Id5IQUSu%2Ff2wLRmzr4pEyQWiDNW0MDmZug8mmhana8%3D\",\n      \"optimal_send_time\": \"Wednesday, 11:00 AM\",\n      \"subject\": \"Elevate Your Team's Animation Skills with Cutting-Edge Training\"\n    }\n  ]\n}\n"
+				}
+			]
+		},
+		{
+			"name": "Multiple Contacts and 2 Emails",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -151,7 +151,7 @@
 			},
 			"response": [
 				{
-					"name": "Download CSV FILE link testted",
+					"name": "Multiple Contacts and 2 Emails",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
@@ -221,6 +221,496 @@
 					],
 					"cookie": [],
 					"body": "{\n    \"download_link\": \"http://onlinesales-api-maildriftcampaign.onrender.com/download-csv?filename=email_sequence.csv\",\n    \"emails\": [\n        {\n            \"body\": \"Hi Om, as a student at MIT Academy of Engineering, mastering web design and development is crucial. Our tailored training program addresses your key challenges, including cloud integration. Elevate your skills and prepare for a successful career in development.\",\n            \"call_to_action\": \"Join our free webinar to learn more!\",\n            \"image_url\": \"https://oaidalleapiprodscus.blob.core.windows.net/private/org-Eo1U9k4AbSJPoV7seW2PDq2d/user-oGBnQp1igcXKlzRsuv3QKfH3/img-9IPeLOzDxIo1bAGwBMg24V9h.png?st=2024-12-22T12%3A49%3A05Z&se=2024-12-22T14%3A49%3A05Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-12-21T19%3A34%3A06Z&ske=2024-12-22T19%3A34%3A06Z&sks=b&skv=2024-08-04&sig=Ut5Hlc/dbHE8njQr0VU1ygo3/KmgdRLSPiuKqq/JptU%3D\",\n            \"optimal_send_time\": \"Monday at 10:00 AM\",\n            \"subject\": \"Unlock Your Potential in Web Development!\"\n        },\n        {\n            \"body\": \"Dear Professor Mohanish, equip your students with the skills they need to excel in web development. Our program focuses on overcoming design and cloud integration challenges, ensuring they are industry-ready.\",\n            \"call_to_action\": \"Schedule a meeting to discuss collaboration opportunities.\",\n            \"image_url\": \"https://oaidalleapiprodscus.blob.core.windows.net/private/org-Eo1U9k4AbSJPoV7seW2PDq2d/user-oGBnQp1igcXKlzRsuv3QKfH3/img-GLMrt0i5dqdoCQK1CzHJDzqi.png?st=2024-12-22T12%3A49%3A18Z&se=2024-12-22T14%3A49%3A18Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-12-21T19%3A32%3A13Z&ske=2024-12-22T19%3A32%3A13Z&sks=b&skv=2024-08-04&sig=iv8sXuqKye/iFLjAHRd90kD%2BV0VCmZ1WoS8zLiPbl5Q%3D\",\n            \"optimal_send_time\": \"Tuesday at 11:00 AM\",\n            \"subject\": \"Empower Your Students with Cutting-Edge Skills\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Arabic Language Testing",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"account_name\": \"MAK Trading Company.\",\r\n  \"industry\": \"Sharemarket\",\r\n  \"pain_points\": \"Trading complexity, market volatility\",\r\n  \"campaign_objective\": \"improve decision-making, and reduce trading risks\",\r\n  \"number_of_emails\": 1,\r\n  \"language\": \"Arabic\",\r\n  \"contacts\": [\r\n    {\r\n      \"job_title\": \"Trader\",\r\n      \"name\": \"Mohanish\",\r\n      \"email\": \"mohanishkhambadkar@gmail.com\"\r\n    }\r\n  ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://onlinesales-api-maildriftcampaign.onrender.com//generate-emails"
+			},
+			"response": [
+				{
+					"name": "Arabic Language Testing",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"account_name\": \"MAK Trading Company.\",\r\n  \"industry\": \"Sharemarket\",\r\n  \"pain_points\": \"Trading complexity, market volatility\",\r\n  \"campaign_objective\": \"improve decision-making, and reduce trading risks\",\r\n  \"number_of_emails\": 1,\r\n  \"language\": \"Arabic\",\r\n  \"contacts\": [\r\n    {\r\n      \"job_title\": \"Trader\",\r\n      \"name\": \"Mohanish\",\r\n      \"email\": \"mohanishkhambadkar@gmail.com\"\r\n    }\r\n  ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://onlinesales-api-maildriftcampaign.onrender.com//generate-emails"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 24 Dec 2024 14:34:34 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "942"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "CF-Ray",
+							"value": "8f714f9c6ba4ce12-SIN"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "rndr-id",
+							"value": "107cdc75-394c-4dca"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Werkzeug/3.1.3 Python/3.11.11"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"download_link\": \"https://onlinesales-api-maildriftcampaign.onrender.com/download-csv?filename=email_sequence.csv\",\n    \"emails\": [\n        {\n            \"body\": \"مرحبًا موهانش،\\n\\nنحن في MAK Trading Company ندرك التحديات التي تواجهها في عالم التداول المعقد والمتقلب. نقدم لك أدوات تحليلية متقدمة تساعدك في اتخاذ قرارات مدروسة وتقليل المخاطر. انضم إلينا لتحسين استراتيجياتك التداولية.\\n\\nنتطلع إلى دعم نجاحك في السوق.\",\n            \"call_to_action\": \"اكتشف المزيد عن حلولنا الآن\",\n            \"image_url\": \"https://oaidalleapiprodscus.blob.core.windows.net/private/org-Eo1U9k4AbSJPoV7seW2PDq2d/user-oGBnQp1igcXKlzRsuv3QKfH3/img-EachcYGOHL5ToGUFdPaz7Ptf.png?st=2024-12-24T13%3A34%3A33Z&se=2024-12-24T15%3A34%3A33Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-12-23T19%3A35%3A44Z&ske=2024-12-24T19%3A35%3A44Z&sks=b&skv=2024-08-04&sig=K7QaqQCBaSxPbna3ERdcr3g80oHlRsQvko7qxeA97Mo%3D\",\n            \"optimal_send_time\": \"الثلاثاء الساعة 10 صباحًا\",\n            \"subject\": \"تحكم في تعقيدات التداول مع حلولنا الذكية\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Error Missing Field",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"account_name\": \"MAK Trading Company.\",\r\n  \"indtry\": \"Sharemarket\",\r\n  \"paipoints\": \"Trading complexity, market volatility\",\r\n  \"camign_objective\": \"improve decision-making, and reduce trading risks\",\r\n  \"number_of_emails\": 1,\r\n  \"lanage\": \"Arabic\",\r\n  \"contacts\": [\r\n    {\r\n      \"jtitle\": \"Trader\",\r\n      \"name\": \"Mohanish\",\r\n      \"email\": \"mohanishkhambadkar@gmail.com\"\r\n    }\r\n  ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://onlinesales-api-maildriftcampaign.onrender.com//generate-emails"
+			},
+			"response": [
+				{
+					"name": "Error Missing Field",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"account_name\": \"MAK Trading Company.\",\r\n  \"indtry\": \"Sharemarket\",\r\n  \"paipoints\": \"Trading complexity, market volatility\",\r\n  \"camign_objective\": \"improve decision-making, and reduce trading risks\",\r\n  \"number_of_emails\": 1,\r\n  \"lanage\": \"Arabic\",\r\n  \"conta\": [\r\n    {\r\n      \"jtitle\": \"Trader\",\r\n      \"name\": \"Mohanish\",\r\n      \"email\": \"mohanishkhambadkar@gmail.com\"\r\n    }\r\n  ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://onlinesales-api-maildriftcampaign.onrender.com//generate-emails"
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 24 Dec 2024 15:01:37 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "42"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "CF-Ray",
+							"value": "8f7176a8ad7afd3c-SIN"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "rndr-id",
+							"value": "e4dde1cc-8d3d-41c4"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Werkzeug/3.1.3 Python/3.11.11"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": \"Missing required fields\"\n}"
+				}
+			]
+		},
+		{
+			"name": "JSON  Error 400",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"account_name\": \"MAK Trading Company.\",\r\n  \"indtry\": \"Sharemarket\",\r\n  \"paipoints\": \"Trading complexity, market volatility\",\r\n  \"camign_objective\": \"improve decision-making, and reduce trading risks\",\r\n  \"number_of_emails\": 1\r\n  \"lanage\": \"Arabic\",\r\n  \"conta\": [\r\n    {\r\n      \"jtitle\": \"Trader\",\r\n      \"name\": \"Mohanish\",\r\n      \"email\": \"mohanishkhambadkar@gmail.com\"\r\n    \r\n  ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://onlinesales-api-maildriftcampaign.onrender.com//generate-emails"
+			},
+			"response": [
+				{
+					"name": "JSON  Error 400",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"account_name\": \"MAK Trading Company.\",\r\n  \"indtry\": \"Sharemarket\",\r\n  \"paipoints\": \"Trading complexity, market volatility\",\r\n  \"camign_objective\": \"improve decision-making, and reduce trading risks\",\r\n  \"number_of_emails\": 1\r\n  \"lanage\": \"Arabic\",\r\n  \"conta\": [\r\n    {\r\n      \"jtitle\": \"Trader\",\r\n      \"name\": \"Mohanish\",\r\n      \"email\": \"mohanishkhambadkar@gmail.com\"\r\n    \r\n  ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://onlinesales-api-maildriftcampaign.onrender.com//generate-emails"
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 24 Dec 2024 15:04:54 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "105"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "CF-Ray",
+							"value": "8f717c8a4c7ff8f4-SIN"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "rndr-id",
+							"value": "594c5df3-2c3a-48d8"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Werkzeug/3.1.3 Python/3.11.11"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": \"400 Bad Request: Failed to decode JSON object: Expecting ',' delimiter: line 7 column 3 (char 234)\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Share market Our APIU",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"account_name\": \"MAK Trading Company.\",\r\n  \"industry\": \"Sharemarket\",\r\n  \"pain_points\": \"Trading complexity, market volatility\",\r\n  \"campaign_objective\": \"Promote our new SaaS platform to enhance market analysis, improve decision-making, and reduce trading risks\",\r\n  \"number_of_emails\": 1,\r\n  \"language\": \"Hindi\",\r\n  \"contacts\": [\r\n    {\r\n      \"name\": \"John Doe\",\r\n      \"email\": \"john.doe@example.com\"\r\n    }\r\n  ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/generate-emails"
+			},
+			"response": [
+				{
+					"name": "Share market Our APIU",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"account_name\": \"MAK Trading Company.\",\r\n  \"industry\": \"Sharemarket\",\r\n  \"pain_points\": \"Trading complexity, market volatility\",\r\n  \"campaign_objective\": \"Promote our new SaaS platform to enhance market analysis, improve decision-making, and reduce trading risks\",\r\n  \"number_of_emails\": 1,\r\n  \"language\": \"Hindi\",\r\n  \"contacts\": [\r\n    {\r\n      \"name\": \"John Doe\",\r\n      \"email\": \"john.doe@example.com\"\r\n    }\r\n  ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:5000/generate-emails"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.0.1 Python/3.10.4"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 22 Dec 2024 08:54:31 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1310"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"download_link\": \"http://onlinesales-api-maildriftcampaign.onrender.com/download-csv?filename=email_sequence.csv\",\n    \"emails\": [\n        {\n            \"body\": \"हमारा नया SaaS प्लेटफॉर्म आपके ट्रेडिंग निर्णयों को सरल और सुरक्षित बनाता है।\",\n            \"call_to_action\": \"अभी जानें कैसे!\",\n            \"image_url\": \"https://oaidalleapiprodscus.blob.core.windows.net/private/org-Eo1U9k4AbSJPoV7seW2PDq2d/user-oGBnQp1igcXKlzRsuv3QKfH3/img-LYqeXIL68aGcfkKaSxZUxZqV.png?st=2024-12-22T07%3A56%3A06Z&se=2024-12-22T09%3A56%3A06Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-12-21T19%3A34%3A28Z&ske=2024-12-22T19%3A34%3A28Z&sks=b&skv=2024-08-04&sig=h%2BwPWmQYVuud094u9zdT2ily469cs%2B/EO2oQ2/EJY8w%3D\",\n            \"optimal_send_time\": \"Tuesday, 10:00 AM\",\n            \"subject\": \"क्या आप ट्रेडिंग जटिलताओं से जूझ रहे हैं?\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Missing error field 400",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"industry\": \"Sharemarket\",\r\n  \"pain_points\": \"Trading complexity, market volatility\",\r\n  \"campaign_objective\": \"improve decision-making, and reduce trading risks\",\r\n  \"number_of_emails\": 1,\r\n  \"language\": \"English\",\r\n  \"contact\": [\r\n    {\r\n      \"job_title\": \"Trader\",\r\n      \"name\": \"Mohanish\",\r\n      \"email\": \"mohanishkhambadkar@gmail.com\"\r\n    }\r\n  ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://onlinesales-api-maildriftcampaign.onrender.com//generate-emails"
+			},
+			"response": [
+				{
+					"name": "Missing error field 400",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"industry\": \"Sharemarket\",\r\n  \"pain_points\": \"Trading complexity, market volatility\",\r\n  \"campaign_objective\": \"improve decision-making, and reduce trading risks\",\r\n  \"number_of_emails\": 1,\r\n  \"language\": \"English\",\r\n  \"contact\": [\r\n    {\r\n      \"job_title\": \"Trader\",\r\n      \"name\": \"Mohanish\",\r\n      \"email\": \"mohanishkhambadkar@gmail.com\"\r\n    }\r\n  ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://onlinesales-api-maildriftcampaign.onrender.com//generate-emails"
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 24 Dec 2024 15:30:41 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "42"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "CF-Ray",
+							"value": "8f71a250dc378202-SIN"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "rndr-id",
+							"value": "2c47cc94-981d-4ecd"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Werkzeug/3.1.3 Python/3.11.11"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": \"Missing required fields\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Updated Ai/ml api using csv and image",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"account_name\": \"MAC Animation\",\r\n  \"industry\": \"Animation\",\r\n  \"pain_points\": \"Designing, Animation\",\r\n  \"campaign_objective\": \"Trained in Animation fields in software like 3D MAX, Adobe \",\r\n  \"number_of_emails\": 1,\r\n  \"language\": \"English\",\r\n  \"contacts\": [\r\n    {\"job_title\": \"Student\", \"name\": \"Samarth Nandanwar\", \"email\": \"samarth@gmail.com\"},\r\n    {\"job_title\": \"CTO\", \"name\": \"Mohanish\", \"email\": \"mohanish@gmail.com\"}\r\n  ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://onlinesales-api-maildriftcampaign.onrender.com//generate-emails"
+			},
+			"response": [
+				{
+					"name": "Updated Ai/ml api using csv and image",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"account_name\": \"Tech Solutions Inc.\",\r\n  \"industry\": \"Software Development\",\r\n  \"pain_points\": \"High development costs, AIML Cloud\",\r\n  \"campaign_objective\": \"Increase awareness AIML including AWS Cloud\",\r\n  \"number_of_emails\": 2,\r\n  \"language\": \"English\",\r\n  \"contacts\": [\r\n    {\"job_title\": \"Marketing Manager\", \"name\": \"Dnyan Khambadkar\", \"email\": \"pmohanishkhambadkar@gmail.com\"},\r\n    {\"job_title\": \"CTO\", \"name\": \"Samarth\", \"email\": \"samarth@gmail.com\"}\r\n  ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:5000/generate-emails"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.0.1 Python/3.10.4"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 22 Dec 2024 10:51:04 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2057"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"download_link\": \"http://onlinesales-api-maildriftcampaign.onrender.com/download-csv?filename=email_sequence.csv\",\n    \"emails\": [\n        {\n            \"body\": \"Hi Dnyan,\\n\\nAs a Marketing Manager at Tech Solutions Inc., you understand the challenges of high development costs. Discover how AIML on AWS Cloud can streamline your processes and reduce expenses. Our tailored solutions are designed to enhance efficiency and drive innovation in software development.\\n\\nBest regards,\\n[Your Name]\",\n            \"call_to_action\": \"Explore our AIML solutions today\",\n            \"image_url\": \"https://oaidalleapiprodscus.blob.core.windows.net/private/org-Eo1U9k4AbSJPoV7seW2PDq2d/user-oGBnQp1igcXKlzRsuv3QKfH3/img-6c30sF5CeX4eT9oaPWN55Bkv.png?st=2024-12-22T09%3A52%3A25Z&se=2024-12-22T11%3A52%3A25Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-12-21T19%3A37%3A55Z&ske=2024-12-22T19%3A37%3A55Z&sks=b&skv=2024-08-04&sig=W5KA22FNJIk8ZcANNe4tEzrSzAnlMFMvhDFzBsOjFGg%3D\",\n            \"optimal_send_time\": \"Tuesday, 10:00 AM\",\n            \"subject\": \"Unlock Cost-Effective AIML Solutions with AWS Cloud\"\n        },\n        {\n            \"body\": \"Hi Samarth,\\n\\nAs CTO, you're focused on cutting-edge technology and cost management. Our AIML solutions on AWS Cloud offer a powerful way to optimize your development processes and reduce overhead. Let's discuss how we can support your strategic goals.\\n\\nBest regards,\\n[Your Name]\",\n            \"call_to_action\": \"Schedule a consultation with our experts\",\n            \"image_url\": \"https://oaidalleapiprodscus.blob.core.windows.net/private/org-Eo1U9k4AbSJPoV7seW2PDq2d/user-oGBnQp1igcXKlzRsuv3QKfH3/img-vF9CP14z2uwvVSSA3bh2s8lE.png?st=2024-12-22T09%3A52%3A39Z&se=2024-12-22T11%3A52%3A39Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-12-21T19%3A32%3A25Z&ske=2024-12-22T19%3A32%3A25Z&sks=b&skv=2024-08-04&sig=pKWQTeRdwMmbw52dwuza88ovw3DUTzsgxj/YASTvcDA%3D\",\n            \"optimal_send_time\": \"Thursday, 11:00 AM\",\n            \"subject\": \"Revolutionize Your Development with AIML on AWS Cloud\"\n        }\n    ]\n}"
 				}
 			]
 		}
