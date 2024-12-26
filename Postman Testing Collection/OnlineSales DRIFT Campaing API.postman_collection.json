@@ -652,6 +652,132 @@
 			]
 		},
 		{
+			"name": "Email Send SMTP Implemented",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"account_name\": \"Bildung GmbH\",\r\n  \"industry\": \"Education\",\r\n  \"pain_points\": \"Student engagement, course material delivery\",\r\n  \"campaign_objective\": \"Improve engagement through interactive online courses\",\r\n  \"number_of_emails\": 1,\r\n  \"language\": \"German\",\r\n  \"contacts\": [\r\n    {\r\n      \"job_title\": \"Course Instructor\",\r\n      \"name\": \"Johann Schmidt\",\r\n      \"email\": \"mohanishkhambadkar@gmail.com\"\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/generate-emails"
+			},
+			"response": [
+				{
+					"name": "Email Send SMTP Implemented",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"account_name\": \"Bildung GmbH\",\r\n  \"industry\": \"Education\",\r\n  \"pain_points\": \"Student engagement, course material delivery\",\r\n  \"campaign_objective\": \"Improve engagement through interactive online courses\",\r\n  \"number_of_emails\": 1,\r\n  \"language\": \"German\",\r\n  \"contacts\": [\r\n    {\r\n      \"job_title\": \"Course Instructor\",\r\n      \"name\": \"Johann Schmidt\",\r\n      \"email\": \"mohanishkhambadkar@gmail.com\"\r\n    }\r\n  ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:5000/generate-emails"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.0.1 Python/3.10.4"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 26 Dec 2024 17:54:45 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1363"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"download_link\": \"https://127.0.0.1:5000/download-csv?filename=email_sequence.csv\",\n    \"emails\": [\n        {\n            \"body\": \"Sehr geehrter Herr Schmidt,\\n\\nals Kursleiter wissen Sie, wie wichtig es ist, die Aufmerksamkeit Ihrer Studenten zu gewinnen und zu halten. Unsere interaktiven Online-Kurse bieten innovative Lösungen zur Verbesserung der Studentenbindung und zur effizienten Bereitstellung von Kursmaterialien. Entdecken Sie, wie Sie mit unseren Tools die Lernerfahrung Ihrer Studenten revolutionieren können.\\n\\nWir freuen uns darauf, Ihnen zu zeigen, wie einfach es ist, Ihre Kurse auf das nächste Level zu heben.\",\n            \"call_to_action\": \"Erfahren Sie mehr über unsere interaktiven Lösungen\",\n            \"image_url\": \"https://oaidalleapiprodscus.blob.core.windows.net/private/org-Eo1U9k4AbSJPoV7seW2PDq2d/user-oGBnQp1igcXKlzRsuv3QKfH3/img-I294LLYrbTR9fML9A1PYKl62.png?st=2024-12-26T16%3A56%3A04Z&se=2024-12-26T18%3A56%3A04Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-12-26T17%3A38%3A15Z&ske=2024-12-27T17%3A38%3A15Z&sks=b&skv=2024-08-04&sig=voXG7NmTU0c2HtXozFLKS6viEdSzABrtKDF59ezTnU8%3D\",\n            \"optimal_send_time\": \"Dienstag, 10:00 Uhr\",\n            \"subject\": \"Steigern Sie die Studentenbindung mit interaktiven Kursen!\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Multiple Email Send",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"account_name\": \"SMS FinanzaSmart\",\r\n  \"industry\": \"Financial Services\",\r\n  \"pain_points\": \"Investment management, portfolio balancing\",\r\n  \"campaign_objective\": \"Optimize client investment strategies and improve financial planning\",\r\n  \"number_of_emails\": 1,\r\n  \"language\": \"Marathi\",\r\n  \"contacts\": [\r\n    {\r\n      \"job_title\": \"Investment Advisor\",\r\n      \"name\": \"Email Sending Testing\",\r\n      \"email\": \"mohanishkhambadkar@gmail.com\"\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/generate-emails"
+			},
+			"response": [
+				{
+					"name": "Multiple Email Send",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"account_name\": \"SMS FinanzaSmart\",\r\n  \"industry\": \"Financial Services\",\r\n  \"pain_points\": \"Investment management, portfolio balancing\",\r\n  \"campaign_objective\": \"Optimize client investment strategies and improve financial planning\",\r\n  \"number_of_emails\": 1,\r\n  \"language\": \"Marathi\",\r\n  \"contacts\": [\r\n    {\r\n      \"job_title\": \"Investment Advisor\",\r\n      \"name\": \"Email Sending Testing\",\r\n      \"email\": \"mohanishkhambadkar@gmail.com\"\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:5000/generate-emails"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.0.1 Python/3.10.4"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 26 Dec 2024 18:22:36 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "3047"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"download_link\": \"https://127.0.0.1:5000/download-csv?filename=email_sequence.csv\",\n    \"emails\": [\n        {\n            \"body\": \"नमस्कार Email Sending Testing, \\n\\nआपल्या गुंतवणूक व्यवस्थापन आणि पोर्टफोलिओ संतुलनाच्या आव्हानांना सोडवण्यासाठी आम्ही एक स्मार्ट उपाय आणला आहे. SMS FinanzaSmart मध्ये, आम्ही आपल्या गुंतवणूक धोरणांना अधिक प्रभावी बनविण्यासाठी आणि आर्थिक नियोजन सुधारण्यासाठी नवीनतम तंत्रज्ञानाचा वापर करतो. \\n\\nआपल्या गुंतवणुकीच्या उद्दिष्टांना साध्य करण्यासाठी आमच्या तज्ञांशी चर्चा करा.\",\n            \"call_to_action\": \"आमच्या तज्ञांशी चर्चा करण्यासाठी येथे क्लिक करा\",\n            \"image_url\": \"https://oaidalleapiprodscus.blob.core.windows.net/private/org-Eo1U9k4AbSJPoV7seW2PDq2d/user-oGBnQp1igcXKlzRsuv3QKfH3/img-GsZCkjMerBojcJKpCn65Axun.png?st=2024-12-26T17%3A23%3A57Z&se=2024-12-26T19%3A23%3A57Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-12-25T23%3A52%3A02Z&ske=2024-12-26T23%3A52%3A02Z&sks=b&skv=2024-08-04&sig=Wc5Ibm2YQkxpaSa0un2zKME2a17lFDSefOmj6VSP2FI%3D\",\n            \"optimal_send_time\": \"Tuesday, 10:00 AM\",\n            \"subject\": \"आपल्या गुंतवणूक धोरणांना सुधारण्यासाठी एक स्मार्ट उपाय!\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
 			"name": "Updated Ai/ml api using csv and image",
 			"request": {
 				"method": "POST",
