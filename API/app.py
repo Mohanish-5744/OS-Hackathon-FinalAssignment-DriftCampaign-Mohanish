@@ -4,6 +4,10 @@ import requests
 import json
 import csv
 import os
+import smtplib
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
+from email.mime.image import MIMEImage
 
 # Initialize Flask app
 app = Flask(__name__)
@@ -86,6 +90,59 @@ def save_emails_to_csv(emails):
 
     return filename
 
+# Helper function to send emails
+def send_email(to_email, subject, body, call_to_action, optimal_send_time, image_url):
+    try:
+        # Your email credentials
+        smtp_server = "smtp.gmail.com"
+        smtp_port = 587
+        sender_email = "h57455125@gmail.com"  # Replace with your email
+        sender_password = "iaph qdvw mkbk lemu"  # Replace with your password
+
+        # Create the email
+        msg = MIMEMultipart()
+        msg['From'] = sender_email
+        msg['To'] = to_email
+        msg['Subject'] = subject
+
+        # Add the email body with additional sections
+        email_content = f"""
+        <p>{body}</p>
+        <br>
+        <p><strong>Call to Action:</strong></p>
+        <p>{call_to_action}</p>
+        <br>
+        <p><strong>Optimal Send Time:</strong></p>
+        <p>{optimal_send_time}</p>
+        """
+
+        msg.attach(MIMEText(email_content, "html"))
+
+        # Add the image if available
+        if image_url:
+            try:
+                # Fetch the image from the URL
+                response = requests.get(image_url)
+                response.raise_for_status()
+                image_data = response.content
+
+                # Attach image to the email
+                img = MIMEImage(image_data)
+                img.add_header('Content-Disposition', 'attachment', filename='image.jpg')
+                msg.attach(img)
+            except Exception as e:
+                print(f"Error attaching image: {str(e)}")
+
+        # Send the email
+        with smtplib.SMTP(smtp_server, smtp_port) as server:
+            server.starttls()  # Upgrade to secure connection
+            server.login(sender_email, sender_password)
+            server.sendmail(sender_email, to_email, msg.as_string())
+
+        print(f"Email sent to {to_email} successfully.")
+    except Exception as e:
+        print(f"Error sending email: {str(e)}")
+
 # Route to generate emails
 @app.route('/generate-emails', methods=['POST'])
 def generate_emails():
@@ -120,36 +177,32 @@ def generate_emails():
         cleaned_response = response.strip("`json\n").strip("`")
         email_response_json = json.loads(cleaned_response)
 
-        # Add image URLs to each email
-        for email in email_response_json.get("emails", []):
+        # Add image URLs to each email and send the emails
+        for contact, email in zip(data['contacts'], email_response_json.get("emails", [])):
             image_prompt = f"Generate an image illustrating the subject: '{email['subject']}' and body: '{email['body']}'"
             image_url = generate_image(image_prompt)
             email['image_url'] = image_url
 
+            # Send email
+            send_email(
+                to_email=contact['email'],
+                subject=email['subject'],
+                body=email['body'],
+                call_to_action=email['call_to_action'],
+                optimal_send_time=email['optimal_send_time'],
+                image_url=image_url
+            )
+
         # Save emails to CSV
         filename = save_emails_to_csv(email_response_json.get("emails", []))
 
-        # Restructure response for desired JSON format
-        formatted_emails = [
-            {
-                "subject": email.get("subject", ""),
-                "body": email.get("body", ""),
-                "call_to_action": email.get("call_to_action", ""),
-                "optimal_send_time": email.get("optimal_send_time", ""),
-                "image_url": email.get("image_url", "")
-            }
-            for email in email_response_json.get("emails", [])
-        ]
-
         # Generate download link for CSV
-        download_link = url_for('download_csv', filename=filename, _external=True,_scheme='https')
+        download_link = url_for('download_csv', filename=filename, _external=True, _scheme='https')
 
-        result = {
-            "emails": formatted_emails,
+        return jsonify({
+            "emails": email_response_json.get("emails", []),
             "download_link": download_link
-        }
-
-        return jsonify(result)
+        })
 
     except Exception as e:
         return jsonify({"error": str(e)}), 500
@@ -191,4 +244,3 @@ def health_check():
 if __name__ == '__main__':
     # Use 0.0.0.0 for all network interfaces and specify a port (default is 5000)
     app.run(host='0.0.0.0', port=5000, debug=True)
-
